@@ -1,0 +1,7 @@
+C:\Programms\Polinom\Polinom\bin\Debug\Polinom.exe.config
+C:\Programms\Polinom\Polinom\bin\Debug\Polinom.exe
+C:\Programms\Polinom\Polinom\bin\Debug\Polinom.pdb
+C:\Programms\Polinom\Polinom\obj\Debug\Polinom.csprojResolveAssemblyReference.cache
+C:\Programms\Polinom\Polinom\obj\Debug\Polinom.csproj.CoreCompileInputs.cache
+C:\Programms\Polinom\Polinom\obj\Debug\Polinom.exe
+C:\Programms\Polinom\Polinom\obj\Debug\Polinom.pdb
