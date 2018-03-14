@@ -19,7 +19,7 @@ namespace Polinom3Test
         [TestMethod]
         public void InsertTest()
         {
-            var p1 = new Polinom3List("1 8 2 2 1 2 4 0 3 1 4 2 2 -3 1 4");
+            var p1 = new Polinom3List("1 2 5 3 6 3 2 4");
             string s = p1.ToString();
             p1.Insert(1, -6, 1, 1);
             s += " + x^-6yz";
@@ -29,7 +29,7 @@ namespace Polinom3Test
         [TestMethod]
         public void DeleteTest()
         {
-            var p1 = new Polinom3List("1 8 2 2 1 2 4 0 3 1 4 2 2 -3 1 4");
+            var p1 = new Polinom3List("3 5 2 5 6 2 5 3 2 4 1 2");
             p1.Delete(1, 1, 1);
             string s = "x^8y^2z^2 + x^2y^4 + 3xy^4z^2 + 2x^-3yz^4";
             Assert.AreEqual(s, p1.ToString());
@@ -42,7 +42,7 @@ namespace Polinom3Test
         [TestMethod]
         public void ValueTest()
         {
-            var p1 = new Polinom3List("1 1 2 2 1 2 4 0 3 1 4 2 2 -3 1 4");
+            var p1 = new Polinom3List("1 2 3 1 2 3 1 2 ");
             int testValue = p1.Value(1, 1, 1);
             int trueValue = 7;
             Console.WriteLine(p1.ToString());
@@ -63,7 +63,7 @@ namespace Polinom3Test
         public void AddTest()
         {
             var p1 = new Polinom3List("1 8 2 2 1 2 4 0 3 1 4 2 2 -3 1 4");
-            var p2 = new Polinom3List("1 8 2 2 1 2 4 0 3 1 4 2 2 -3 1 4");
+            var p2 = new Polinom3List("2 2 4 6 3 2 5 6 2 2 5 7 2 2 4 5");
             Console.WriteLine("p2:     " + p2);
             Console.WriteLine("p1      " + p1);
             p2.Add(p1);
